@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-dark: #000000; /* Pure Black */
+  --color-neon-teal: #00b8ff; /* Cyber Blue (Less Green) */
+  --color-neon-purple: #9d00ff;
+  --color-surface: #05060a; /* Darker Surface */
+  --color-surface-highlight: #0f111a;
+
+  --radius-3xl: 2rem;
+  --radius-4xl: 3rem;
+  --radius-pill: 9999px;
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-gradient-x: gradient-x 15s ease infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes gradient-x {
+    0%, 100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  --animate-marquee: marquee 60s linear infinite;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ededed;
+  --font-inter: 'Inter', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  @apply antialiased overflow-x-hidden;
+}
+
+/* Enforce Pointer Cursor Globally */
+a, button, [role="button"], input[type="submit"], input[type="button"] {
+  cursor: pointer !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070812;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1d33;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bf00ff;
+}
+
+@utility glass-panel {
+  @apply bg-surface/50 backdrop-blur-md border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+}
+
+@utility text-gradient {
+  @apply bg-clip-text text-transparent bg-linear-to-r from-white to-gray-500;
+}
+
+@utility text-gradient-neon {
+  @apply bg-clip-text text-transparent bg-linear-to-r from-neon-teal to-neon-purple;
+}
+
+@utility mesh-gradient {
+   background: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%),
+               radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%),
+               radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+}
+
+@utility animate-gradient-text {
+  background: linear-gradient(
+    to right,
+    #00f0ff,
+    #bf00ff,
+    #00f0ff
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-x 3s linear infinite;
+}
