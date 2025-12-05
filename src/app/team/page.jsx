@@ -45,7 +45,7 @@ export default function TeamPage() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {team.map((member, i) => (
           <ScrollWrapper key={member.name} delay={i * 0.1}>
-            <div className="group relative w-full bg-surface/30 rounded-[2.5rem] overflow-hidden border border-white/5 hover:border-neon-teal/50 transition-all duration-500 hover:shadow-[0_0_50px_-10px_var(--color-neon-teal)] flex flex-col">
+            <div className="group relative w-full bg-surface/30 rounded-[2.5rem] overflow-hidden border border-white/5 transition-all duration-500 hover:bg-surface/50 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 flex flex-col">
 
               {/* Image Section */}
               <div className="relative h-96 w-full overflow-hidden">

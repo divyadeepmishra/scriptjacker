@@ -8,7 +8,7 @@ export default function ServiceCard({ title, description, icon: Icon, href = "/s
   return (
     <ScrollWrapper delay={delay}>
       <div
-        className="group relative h-full p-8 rounded-[2.5rem] bg-surface/50 border border-white/5 hover:border-transparent transition-all duration-500 overflow-hidden"
+        className="group relative h-full p-8 rounded-[2.5rem] bg-surface/50 border border-white/5 transition-all duration-500 overflow-hidden shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30"
       >
         {/* Hover Glow Gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-neon-teal/20 to-neon-purple/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />

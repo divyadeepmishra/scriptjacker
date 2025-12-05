@@ -57,7 +57,7 @@ export default function WhyChooseUs() {
        </div>
 
        <div className="md:w-2/3 w-full">
-         <div className="bg-surface/30 rounded-3xl p-6 border border-white/5">
+         <div className="bg-surface/30 rounded-[2.5rem] p-6 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
             {reasons.map((item, index) => {
                const isOpen = expanded === index;
                return (

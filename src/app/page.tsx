@@ -80,7 +80,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Project-Based */}
               <ScrollWrapper delay={0.1}>
-                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 hover:bg-surface/50 hover:border-neon-teal/50 transition-all duration-300">
+                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
                     <div className="w-14 h-14 rounded-2xl bg-neon-teal/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                        <Workflow className="w-8 h-8 text-neon-teal" />
                     </div>
@@ -96,7 +96,7 @@ export default function Home() {
 
               {/* Contract-Based */}
               <ScrollWrapper delay={0.2}>
-                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 hover:bg-surface/50 hover:border-neon-teal/50 transition-all duration-300">
+                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
                     <div className="w-14 h-14 rounded-2xl bg-neon-purple/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                        <FileSignature className="w-8 h-8 text-neon-purple" />
                     </div>
@@ -112,7 +112,7 @@ export default function Home() {
 
               {/* Retainer Model */}
               <ScrollWrapper delay={0.3}>
-                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 hover:bg-surface/50 hover:border-neon-teal/50 transition-all duration-300">
+                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
                     <div className="w-14 h-14 rounded-2xl bg-neon-teal/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                        <Handshake className="w-8 h-8 text-neon-teal" />
                     </div>
@@ -128,7 +128,7 @@ export default function Home() {
 
               {/* Subscription-Based */}
               <ScrollWrapper delay={0.4}>
-                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 hover:bg-surface/50 hover:border-neon-teal/50 transition-all duration-300">
+                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
                     <div className="w-14 h-14 rounded-2xl bg-neon-purple/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                        <CreditCard className="w-8 h-8 text-neon-purple" />
                     </div>
@@ -187,7 +187,7 @@ export default function Home() {
              { title: "Manual Report", icon: FileSignature }
            ].map((item, i) => (
               <ScrollWrapper key={i} delay={i * 0.1}>
-                 <div className="flex items-center p-6 rounded-2xl bg-surface/30 border border-white/5 hover:bg-surface/50 transition-colors">
+                 <div className="flex items-center p-6 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
                     <div className="w-12 h-12 rounded-full bg-neon-teal/10 flex items-center justify-center mr-4">
                        <item.icon className="w-6 h-6 text-neon-teal" />
                     </div>

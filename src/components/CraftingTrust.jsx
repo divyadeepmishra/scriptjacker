@@ -58,7 +58,7 @@ const AccordionItem = ({ item, expanded, setExpanded }) => {
       className={`cursor-pointer mb-4 rounded-full overflow-hidden border transition-all duration-300 ${
         isOpen
           ? 'bg-neon-teal/20 border-neon-teal shadow-[0_0_20px_-5px_var(--color-neon-teal)]'
-          : 'bg-surface/40 border-white/5 hover:bg-surface/60 hover:border-white/10'
+          : 'bg-surface/40 border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50'
       }`}
     >
       <div className="flex items-center justify-between px-6 py-4 md:px-8 md:py-5">

@@ -36,7 +36,7 @@ export default function ApproachCycle() {
        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
              <ScrollWrapper key={step.id} delay={index * 0.1}>
-                <div className="group relative p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 hover:bg-surface/50 transition-all duration-300 h-full flex flex-col items-center text-center">
+                <div className="group relative p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 hover:bg-surface/50 transition-all duration-300 h-full flex flex-col items-center text-center shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30">
                    {/* Number Watermark */}
                    <div className="absolute top-4 right-8 text-8xl font-bold text-white/5 group-hover:text-neon-teal/10 transition-colors pointer-events-none">
                       0{step.id}

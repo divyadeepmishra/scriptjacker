@@ -40,7 +40,7 @@ export default function TestimonialCarousel() {
 
   return (
     <ScrollWrapper>
-      <div className="w-full overflow-hidden py-20 relative bg-black/20 backdrop-blur-sm">
+      <div className="w-full overflow-hidden py-20 relative bg-black/20 backdrop-blur-sm rounded-[2rem]">
          {/* Fade masks */}
          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-dark to-transparent z-10 pointer-events-none" />
          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-dark to-transparent z-10 pointer-events-none" />
