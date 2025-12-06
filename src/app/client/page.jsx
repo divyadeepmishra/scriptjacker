@@ -1,30 +1,34 @@
 'use client';
 
+import PartnersCarousel from '@/components/PartnersCarousel';
 import { motion } from 'framer-motion';
-import { Award, Briefcase, Building2, Cpu, Globe, Hexagon, ShieldCheck, Zap } from 'lucide-react';
 
-// --- CLIENT DATA ---
-// Update this array to change logos
-// To use real images:
-// 1. Upload images to /public/logos/
-// 2. Add 'logo: "/logos/my-logo.png"' to the object
-// 3. Uncomment the <Image> component below
-const clients = [
-  { id: 1, name: "TechCorp Global", icon: Building2 },
-  { id: 2, name: "SecureNet Systems", icon: ShieldCheck },
-  { id: 3, name: "Future Finance", icon: Hexagon },
-  { id: 4, name: "Global Ventures", icon: Globe },
-  { id: 5, name: "Innovate Labs", icon: Zap },
-  { id: 6, name: "Quantum Computing", icon: Cpu },
-  { id: 7, name: "Elite Security", icon: Award },
-  { id: 8, name: "Enterprise Solutions", icon: Briefcase },
+const partnerLogos = [
+  "/partners/cleartax.png",
+  "/partners/commerzbank.jpg",
+  "/partners/coinswitch.png",
+  "/partners/bokadirekt.jpg",
+  "/partners/boeing.png",
+  "/partners/zepto.jpg",
+  "/partners/zazzle.png",
+  "/partners/whatfix.jpg",
+  "/partners/tallinna_sadam.png",
+  "/partners/shuttle.jpg",
+  "/partners/nykaa.png",
+  "/partners/jouwweb.png",
+  "/partners/honda.png",
+  "/partners/bling.png"
 ];
+
+// Split into two rows for visual balance
+const row1 = partnerLogos.slice(0, 7);
+const row2 = partnerLogos.slice(7);
 
 export default function ClientPage() {
   return (
     <div className="min-h-screen pt-24 pb-20">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 mb-20 text-center">
+      <section className="container mx-auto px-4 mb-12 text-center">
         <motion.span
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,43 +54,17 @@ export default function ClientPage() {
         </motion.p>
       </section>
 
-      {/* Logo Grid */}
-      <section className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {clients.map((client, index) => (
-            <motion.div
-              key={client.id}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: index * 0.1 }}
-              className="group relative bg-surface/30 border border-white/5 rounded-2xl p-10 flex flex-col items-center justify-center hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300 aspect-square"
-            >
-               {/* Placeholder Icon - Replace with <Image> when you have real logos */}
-               <div className="w-16 h-16 mb-4 text-gray-600 group-hover:text-neon-teal transition-colors">
-                  <client.icon className="w-full h-full" strokeWidth={1.5} />
-               </div>
-
-               <span className="text-gray-500 font-medium group-hover:text-white transition-colors text-center">
-                 {client.name}
-               </span>
-
-               {/*
-               // EXAMPLE FOR REAL IMAGE USAGE:
-               /*
-               <div className="relative w-full h-full">
-                   <Image
-                     src={client.logo}
-                     alt={client.name}
-                     fill
-                     className="object-contain p-4 opacity-50 group-hover:opacity-100 transition-opacity grayscale group-hover:grayscale-0"
-                   />
-               </div>
-               */
-               }
-            </motion.div>
-          ))}
-        </div>
+      {/* Infinite Carousel - Row 1 */}
+      <section className="w-full mb-8">
+         <PartnersCarousel logos={row1} />
       </section>
+
+      {/* Infinite Carousel - Row 2 */}
+      <section className="w-full mb-20">
+         <PartnersCarousel logos={row2} />
+      </section>
+
+      {/* Optional: Keep Grid if User Wants Both (Currently Replacing completely for better aesthetics) */}
     </div>
   );
 }

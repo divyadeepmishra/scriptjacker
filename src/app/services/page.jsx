@@ -4,7 +4,7 @@ import ScrollWrapper from '@/components/ScrollWrapper';
 import ServiceCard from '@/components/ServiceCard';
 import ServiceModal from '@/components/ServiceModal';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
-import { CloudLightning, Code, Fingerprint, Server, Shield, Wifi } from 'lucide-react';
+import { CloudLightning, Code, FileCheck, Fingerprint, Server, Shield, Wifi } from 'lucide-react';
 import { useState } from 'react';
 
 export default function ServicesPage() {
@@ -18,7 +18,7 @@ export default function ServicesPage() {
       icon: Shield
     },
     {
-      title: "Smart Contract Audits",
+      title: "Compliance Testing",
       description: "Line-by-line analysis of EVM and Rust smart contracts.",
       detailedDescription: "In the blockchain world, code is law—and bugs are expensive. We conduct rigorous, line-by-line manual reviews of your Solidity or Rust contracts. We check for reentrancy attacks, gas optimization issues, and logic errors to ensure your DeFi protocol or NFT project is secure before launch.",
       icon: Fingerprint
@@ -46,6 +46,12 @@ export default function ServicesPage() {
       description: "Firmware analysis and hardware hacking for connected devices.",
       detailedDescription: "Connecting the physical to the digital introduces new risks. We reverse engineer firmware, dump flash memory, and analyze communication protocols (BLE, Zigbee, MQTT) to find vulnerabilities in your connected devices, ensuring your hardware doesn't become a gateway for attackers.",
       icon: Wifi
+    },
+    {
+      title: "Compliance Testing",
+      description: "Gap analysis and readiness assessments for SOC2, ISO 27001, and GDPR.",
+      detailedDescription: "Regulatory compliance isn't just a checkbox; it's a security baseline. We help you navigate the complex landscape of SOC2, ISO 27001, HIPAA, and GDPR. We conduct gap analyses, readiness assessments, and technical audits to ensure your infrastructure and policies meet strict global standards.",
+      icon: FileCheck
     },
   ];
 
