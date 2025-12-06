@@ -18,12 +18,6 @@ export default function ServicesPage() {
       icon: Shield
     },
     {
-      title: "Compliance Testing",
-      description: "Line-by-line analysis of EVM and Rust smart contracts.",
-      detailedDescription: "In the blockchain world, code is law—and bugs are expensive. We conduct rigorous, line-by-line manual reviews of your Solidity or Rust contracts. We check for reentrancy attacks, gas optimization issues, and logic errors to ensure your DeFi protocol or NFT project is secure before launch.",
-      icon: Fingerprint
-    },
-    {
       title: "Red Teaming",
       description: "Simulating APTs to test your physical and digital defenses.",
       detailedDescription: "Pentesting tests your shields; Red Teaming tests your reaction. We launch a full-scope, stealthy attack simulation mimicking Advanced Persistent Threats (APTs). From social engineering employees to breaching physical offices and pivoting through networks, we test how well your SOC detects and responds to a sophisticated adversary.",
