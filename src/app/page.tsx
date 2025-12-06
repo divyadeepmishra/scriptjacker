@@ -6,13 +6,28 @@ import Hero from '@/components/Hero';
 import HomeStats from '@/components/HomeStats';
 import ScrollWrapper from '@/components/ScrollWrapper';
 import ServiceCard from '@/components/ServiceCard';
+import ServiceModal from '@/components/ServiceModal';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 import { CreditCard, FileCheck, FileJson, FileSignature, Globe, Handshake, Lock, MailWarning, Network, Puzzle, Smartphone, Star, Users, Workflow, ZoomIn } from 'lucide-react';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Home() {
+  const [selectedFeature, setSelectedFeature] = useState<{ title: string; description: string; icon: any } | null>(null);
+
+  const handleLearnMore = (title: string, description: string, icon: any) => {
+    setSelectedFeature({ title, description, icon });
+  };
+
   return (
     <div className="flex flex-col gap-20 pb-20">
+      {selectedFeature && (
+        <ServiceModal
+          isOpen={true}
+          onClose={() => setSelectedFeature(null)}
+          {...selectedFeature}
+        />
+      )}
       <Hero />
       <HomeStats />
 
@@ -27,44 +42,50 @@ export default function Home() {
            </div>
          </ScrollWrapper>
 
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ServiceCard
-              title="Web Application Pentesting"
-              description="We simulate real-world attacks on your websites to uncover hidden vulnerabilities, ensuring your online presence remains robust and secure."
-              icon={Globe}
-              delay={0.1}
-            />
-            <ServiceCard
-               title="API Security Testing"
-               description="Our experts rigorously test your APIs to safeguard data integrity and prevent unauthorized access, keeping your integrations bulletproof."
-               icon={Lock}
-               delay={0.15}
-            />
-            <ServiceCard
-               title="Mobile Application Security"
-               description="We evaluate your mobile apps for vulnerabilities and compliance issues, ensuring a secure and seamless user experience."
-               icon={Smartphone}
-               delay={0.2}
-            />
-            <ServiceCard
-               title="Network Pentesting"
-               description="We simulate real-world attacks on your network to identify vulnerabilities in firewalls, routers, and internal systems. Our actionable recommendations help you strengthen defenses."
-               icon={Network}
-               delay={0.25}
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
              <ServiceCard
-               title="Phishing Simulation"
-               description="We conduct controlled phishing tests to evaluate your team's ability to spot suspicious emails. The results guide targeted training, reducing the risk of successful phishing attacks."
-               icon={MailWarning}
-               delay={0.3}
-            />
+               title="Web Application Pentesting"
+               description="We simulate real-world attacks on your websites to uncover hidden vulnerabilities, ensuring your online presence remains robust and secure."
+               icon={Globe}
+               delay={0.1}
+               onLearnMore={() => handleLearnMore("Web Application Pentesting", "We simulate real-world attacks on your websites to uncover hidden vulnerabilities, ensuring your online presence remains robust and secure.", Globe)}
+             />
              <ServiceCard
-               title="Custom Needs"
-               description="Have unique needs? We tailor our security services to fit your specific requirements. By combining elements from our standard offerings, we craft a personalized strategy."
-               icon={Puzzle}
-               delay={0.35}
-            />
-         </div>
+                title="API Security Testing"
+                description="Our experts rigorously test your APIs to safeguard data integrity and prevent unauthorized access, keeping your integrations bulletproof."
+                icon={Lock}
+                delay={0.15}
+                onLearnMore={() => handleLearnMore("API Security Testing", "Our experts rigorously test your APIs to safeguard data integrity and prevent unauthorized access, keeping your integrations bulletproof.", Lock)}
+             />
+             <ServiceCard
+                title="Mobile Application Security"
+                description="We evaluate your mobile apps for vulnerabilities and compliance issues, ensuring a secure and seamless user experience."
+                icon={Smartphone}
+                delay={0.2}
+                onLearnMore={() => handleLearnMore("Mobile Application Security", "We evaluate your mobile apps for vulnerabilities and compliance issues, ensuring a secure and seamless user experience.", Smartphone)}
+             />
+             <ServiceCard
+                title="Network Pentesting"
+                description="We simulate real-world attacks on your network to identify vulnerabilities in firewalls, routers, and internal systems. Our actionable recommendations help you strengthen defenses."
+                icon={Network}
+                delay={0.25}
+                onLearnMore={() => handleLearnMore("Network Pentesting", "We simulate real-world attacks on your network to identify vulnerabilities in firewalls, routers, and internal systems. Our actionable recommendations help you strengthen defenses.", Network)}
+             />
+              <ServiceCard
+                title="Phishing Simulation"
+                description="We conduct controlled phishing tests to evaluate your team's ability to spot suspicious emails. The results guide targeted training, reducing the risk of successful phishing attacks."
+                icon={MailWarning}
+                delay={0.3}
+                onLearnMore={() => handleLearnMore("Phishing Simulation", "We conduct controlled phishing tests to evaluate your team's ability to spot suspicious emails. The results guide targeted training, reducing the risk of successful phishing attacks.", MailWarning)}
+             />
+              <ServiceCard
+                title="Custom Needs"
+                description="Have unique needs? We tailor our security services to fit your specific requirements. By combining elements from our standard offerings, we craft a personalized strategy."
+                icon={Puzzle}
+                delay={0.35}
+                onLearnMore={() => handleLearnMore("Custom Needs", "Have unique needs? We tailor our security services to fit your specific requirements. By combining elements from our standard offerings, we craft a personalized strategy.", Puzzle)}
+             />
+          </div>
       </section>
 
       {/* Engagement Models Section */}
@@ -90,9 +111,9 @@ export default function Home() {
                     <p className="text-gray-400 mb-6 leading-relaxed">
                        You are having lots of projects? We'll assess your web apps, APIs, mobile apps, or network for vulnerabilities, provide a detailed report, and guide you on fixing the issues. Best for businesses that want to test specific assets before launching or after major updates.
                     </p>
-                    <Link href="/contact" className="inline-flex items-center px-6 py-2 rounded-full bg-neon-purple/10 text-neon-purple font-bold hover:bg-neon-purple hover:text-white transition-all text-sm uppercase tracking-wide">
+                    <button onClick={() => handleLearnMore("Project-Based", "You are having lots of projects? We'll assess your web apps, APIs, mobile apps, or network for vulnerabilities, provide a detailed report, and guide you on fixing the issues. Best for businesses that want to test specific assets before launching or after major updates.", Workflow)} className="inline-flex items-center px-6 py-2 rounded-full bg-neon-purple/10 text-neon-purple font-bold hover:bg-neon-purple hover:text-white transition-all text-sm uppercase tracking-wide">
                        Know More
-                    </Link>
+                    </button>
                  </div>
               </ScrollWrapper>
 
@@ -106,9 +127,9 @@ export default function Home() {
                     <p className="text-gray-400 mb-6 leading-relaxed">
                        Want long-term security? We provide scheduled pentests and continuous security evaluation over a fixed period. Ideal for businesses that need security as part of their long-term strategy.
                     </p>
-                    <Link href="/contact" className="inline-flex items-center px-6 py-2 rounded-full bg-neon-purple/10 text-neon-purple font-bold hover:bg-neon-purple hover:text-white transition-all text-sm uppercase tracking-wide">
+                    <button onClick={() => handleLearnMore("Contract-Based", "Want long-term security? We provide scheduled pentests and continuous security evaluation over a fixed period. Ideal for businesses that need security as part of their long-term strategy.", FileSignature)} className="inline-flex items-center px-6 py-2 rounded-full bg-neon-purple/10 text-neon-purple font-bold hover:bg-neon-purple hover:text-white transition-all text-sm uppercase tracking-wide">
                        Know More
-                    </Link>
+                    </button>
                  </div>
               </ScrollWrapper>
 
@@ -122,9 +143,9 @@ export default function Home() {
                     <p className="text-gray-400 mb-6 leading-relaxed">
                        Need ongoing security support? We act as your security partner, performing regular vulnerability assessments, quick response to threats, and on-demand testing whenever required. Perfect for businesses looking for continuous protection.
                     </p>
-                    <Link href="/contact" className="inline-flex items-center px-6 py-2 rounded-full bg-neon-purple/10 text-neon-purple font-bold hover:bg-neon-purple hover:text-white transition-all text-sm uppercase tracking-wide">
+                    <button onClick={() => handleLearnMore("Retainer Model", "Need ongoing security support? We act as your security partner, performing regular vulnerability assessments, quick response to threats, and on-demand testing whenever required. Perfect for businesses looking for continuous protection.", Handshake)} className="inline-flex items-center px-6 py-2 rounded-full bg-neon-purple/10 text-neon-purple font-bold hover:bg-neon-purple hover:text-white transition-all text-sm uppercase tracking-wide">
                        Know More
-                    </Link>
+                    </button>
                  </div>
               </ScrollWrapper>
 
@@ -138,9 +159,9 @@ export default function Home() {
                     <p className="text-gray-400 mb-6 leading-relaxed">
                        Prefer predictable costs with ongoing security? We offer frequent security assessments, vulnerability management, and compliance checks at a fixed price. A great choice for businesses that want regular security coverage without surprises.
                     </p>
-                     <Link href="/contact" className="inline-flex items-center px-6 py-2 rounded-full bg-neon-purple/10 text-neon-purple font-bold hover:bg-neon-purple hover:text-white transition-all text-sm uppercase tracking-wide">
-                       Know More
-                    </Link>
+                      <button onClick={() => handleLearnMore("Subscription-Based", "Prefer predictable costs with ongoing security? We offer frequent security assessments, vulnerability management, and compliance checks at a fixed price. A great choice for businesses that want regular security coverage without surprises.", CreditCard)} className="inline-flex items-center px-6 py-2 rounded-full bg-neon-purple/10 text-neon-purple font-bold hover:bg-neon-purple hover:text-white transition-all text-sm uppercase tracking-wide">
+                        Know More
+                     </button>
                  </div>
               </ScrollWrapper>
           </div>

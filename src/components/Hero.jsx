@@ -1,11 +1,12 @@
 'use client';
 
 import ScrollWrapper from '@/components/ScrollWrapper';
+import TypewriterText from '@/components/TypewriterText';
 import { useScrollScale } from '@/hooks/useScrollScale';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { lazy } from 'react';
+import { lazy, useState } from 'react';
 
 // Lazy load Spline to avoid blocking main thread
 const Spline = lazy(() => import('@splinetool/react-spline'));
@@ -16,6 +17,7 @@ const SPLINE_SCENE_URL = "https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.spli
 
 export default function Hero() {
   const { scale, opacity } = useScrollScale();
+  const [isFirstLineDone, setIsFirstLineDone] = useState(false);
 
   return (
     <section className="relative w-full min-h-screen pt-24 md:pt-32 flex items-center overflow-hidden bg-dark">
@@ -39,9 +41,19 @@ export default function Hero() {
           </ScrollWrapper>
 
           <ScrollWrapper delay={0.1}>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-8 leading-tight">
-              Vulnerabilities <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-teal to-neon-purple animate-gradient-text">Die Here.</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-8 leading-tight min-h-[3em]">
+               <TypewriterText
+                  text="Vulnerabilities "
+                  speed={0.15}
+                  onComplete={() => setIsFirstLineDone(true)}
+               />
+               <br />
+               <TypewriterText
+                  text="Die Here."
+                  className="text-transparent bg-clip-text bg-gradient-to-r from-neon-teal to-neon-purple"
+                  speed={0.15}
+                  available={isFirstLineDone}
+               />
             </h1>
           </ScrollWrapper>
 
@@ -70,12 +82,13 @@ export default function Hero() {
 
           <ScrollWrapper delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
-              <Link href="/contact">
-                <button className="group relative px-8 py-4 md:px-10 md:py-5 bg-neon-teal text-white font-bold text-base md:text-lg rounded-full overflow-hidden hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_var(--color-neon-teal)] hover:shadow-[0_0_60px_-10px_var(--color-neon-teal)] uppercase tracking-wider w-full sm:w-auto">
+              <Link
+                href="/contact"
+                className="group relative px-8 py-4 md:px-10 md:py-5 bg-neon-teal text-white font-bold text-base md:text-lg rounded-full overflow-hidden hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_var(--color-neon-teal)] hover:shadow-[0_0_60px_-10px_var(--color-neon-teal)] uppercase tracking-wider w-full sm:w-auto inline-flex items-center justify-center catch-button"
+              >
                   <span className="relative z-10 flex items-center justify-center">
                     Request a Quote <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </span>
-                </button>
               </Link>
             </div>
           </ScrollWrapper>

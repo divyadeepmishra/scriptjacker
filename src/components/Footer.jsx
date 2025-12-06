@@ -1,4 +1,5 @@
 import { FileText, Github, Instagram, Linkedin, Shield, Twitter } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -8,11 +9,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
 
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="flex items-center space-x-2 group mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-neon-teal to-neon-purple p-[1px]">
-                  <div className="w-full h-full bg-black rounded-lg flex items-center justify-center">
-                    <Shield className="w-5 h-5 text-white" />
-                  </div>
+            <Link href="/" className="flex items-center space-x-3 group mb-4">
+              <div className="relative w-8 h-10">
+                 <Image
+                    src="/logo.png"
+                    alt="ScriptJacker LLP Logo"
+                    fill
+                    className="object-contain"
+                    sizes="32px"
+                 />
               </div>
               <span className="text-xl font-bold text-white">ScriptJacker LLP</span>
             </Link>
@@ -39,9 +44,12 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><Link href="/services#pentesting" className="hover:text-neon-teal transition-colors">Penetration Testing</Link></li>
+              <li><Link href="/services#opportunities" className="hover:text-neon-teal transition-colors">Job Opportunities</Link></li>
               <li><Link href="/services#audits" className="hover:text-neon-teal transition-colors">Smart Contract Audits</Link></li>
               <li><Link href="/services#red-teaming" className="hover:text-neon-teal transition-colors">Red Teaming</Link></li>
               <li><Link href="/services#code-review" className="hover:text-neon-teal transition-colors">Security Code Review</Link></li>
+              <li><Link href="/services#custom-solutions" className="hover:text-neon-teal transition-colors">Custom Solutions</Link></li>
+
             </ul>
           </div>
 
@@ -49,9 +57,11 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><Link href="/about" className="hover:text-neon-teal transition-colors">About Us</Link></li>
-              <li><Link href="/team" className="hover:text-neon-teal transition-colors">Team</Link></li>
+              <li><Link href="/team" className="hover:text-neon-teal transition-colors">Our Team</Link></li>
               <li><Link href="/case-studies" className="hover:text-neon-teal transition-colors">Case Studies</Link></li>
-              <li><Link href="/contact" className="hover:text-neon-teal transition-colors">Contact</Link></li>
+              <li><Link href="/services#testimonials" className="hover:text-neon-teal transition-colors">Testimonials</Link></li>
+              <li><Link href="/contact" className="hover:text-neon-teal transition-colors">Contact Us</Link></li>
+              <li><Link href="/client" className="hover:text-neon-teal transition-colors">Our Partners</Link></li>
             </ul>
           </div>
 

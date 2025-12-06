@@ -20,9 +20,9 @@ export default function CaseStudiesPage() {
             </div>
             <div className="p-8">
                <p className="text-gray-400 mb-6">
-                 How we identified a critical reentrancy vulnerability that could have drained the entire liquidity pool.
+                   How we identified a critical reentrancy vulnerability that could have drained the entire liquidity pool.
                </p>
-               <Link href={`/case-studies/${i}`} className="inline-flex items-center text-white font-semibold hover:text-neon-teal transition-colors">
+               <Link href="/case-study-demo" className="inline-flex items-center text-white font-semibold hover:text-neon-teal transition-colors">
                  Read Full Study <ArrowRight className="ml-2 w-4 h-4" />
                </Link>
             </div>

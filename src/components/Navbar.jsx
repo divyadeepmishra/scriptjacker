@@ -2,7 +2,8 @@
 
 import { cn } from '@/lib/utils';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Menu, Shield, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -43,12 +44,17 @@ export default function Navbar() {
         )}
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2 group shrink-0 mr-8 pl-4">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-neon-teal to-neon-purple p-[1px] shadow-[0_0_15px_-3px_var(--color-neon-teal)] group-hover:shadow-[0_0_25px_-5px_var(--color-neon-teal)] transition-all duration-500">
-               <div className="w-full h-full bg-black rounded-full flex items-center justify-center group-hover:bg-opacity-80 transition-all">
-                  <Shield className="w-5 h-5 text-white" />
-               </div>
-            </div>
+        <Link href="/" className="flex items-center space-x-3 group shrink-0 mr-8 pl-4">
+             <div className="relative w-10 h-12 transition-transform duration-500 group-hover:scale-110">
+                <Image
+                  src="/logo.png"
+                  alt="ScriptJacker LLP Logo"
+                  fill
+                  className="object-contain drop-shadow-[0_0_10px_rgba(56,239,125,0.5)]"
+                  sizes="40px"
+                  priority
+                />
+             </div>
             <span className={cn(
                 "text-lg font-bold tracking-tight transition-all duration-300",
                 isScrolled ? "text-white" : "text-white"
