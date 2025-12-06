@@ -1,65 +1,105 @@
-# ScriptJacker Frontend
+# Cyber_Secure 🛡️
 
-A high-end, dark-themed cybersecurity marketing site built with Next.js 15+, Tailwind CSS, and Spline 3D.
+**"We break your systems before they do."**
+
+Welcome to the digital frontline. **Cyber_Secure** is not just a marketing site; it's a high-performance, interactive showcase of elite offensive security capabilities. Built to captivate and convert, it combines a sleek, dark-themed "hacker" aesthetic with bleeding-edge web technologies.
+
+This project is designed to be as robust as the security services it represents—fast, secure, and visually striking.
+
+---
+
+## ⚡ Under the Hood: The Tech Stack
+
+This platform is engineered using a modern, scalable stack designed for performance and developer experience.
+
+### **Core Framework**
+- **[Next.js 16](https://nextjs.org/)**: The backbone of our operation. We leverage the App Router for seamless routing, server-side rendering for superior SEO, and server components for lightning-fast loads.
+- **[TypeScript](https://www.typescriptlang.org/)**: Strict typing is our first line of defense against bugs.
+
+### **Styling & Aesthetics**
+- **[Tailwind CSS v4](https://tailwindcss.com/)**: Utility-first styling that allows us to rapid-prototype "Cyberpunk" designs without leaving the HTML.
+- **Dark Mode Architecture**: A custom-built semantic color system (neon-teal, surface-dark) that creates an immersive environment.
+
+### **Motion & Interactivity**
+- **[Framer Motion](https://www.framer.com/motion/)**: The magic behind the movement. From complex orbital systems to scroll-triggered reveals, we use Framer Motion to bring the UI to life.
+- **[@splinetool/react-spline](https://spline.design/)**: Integration for 3D interactive elements that provide a "wow" factor upon entry.
+
+---
 
 ## 🚀 Getting Started
 
+Ready to deploy this fortress on your local machine?
+
 ### Prerequisites
-- Node.js 18+
-- npm or yarn
+- **Node.js 18+** (Required for Next.js 16)
+- **npm** or **yarn**
 
 ### Installation
-```bash
-npm install
-```
 
-### Development
-```bash
-npm run dev
-```
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/divyadeepmishra/cyber-secure.git
+    cd cyber-secure
+    ```
 
-### Building for Production
-```bash
-npm run build
-npm start
-```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-## 🎨 3D Spline Integration
-The Hero component uses `@splinetool/react-spline` to render 3D scenes.
-- **Location**: `src/components/Hero.jsx`
-- **Configuration**: Replace the `SPLINE_SCENE_URL` constant with your exported Spline URL.
-- **Fallback**: Mobile users see a fallback layout. For strict image fallback, uncomment the logic in `Hero.jsx`.
+3.  **Ignite the development server:**
+    ```bash
+    npm run dev
+    ```
 
-## ⚡ Performance Optimization Checklist (Lighthouse)
-- [x] **Next.js Image Optimization**: Use `<Image />` where possible.
-- [x] **Lazy Loading**: Spline scene is lazy-loaded using `React.lazy`.
-- [x] **Font Optimization**: `next/font` loads Inter automatically.
-- [ ] **PWA**: Add manifest.json for offline capabilities (optional).
-- [ ] **Analytics**: Integrate privacy-preserving analytics (e.g., Plausible).
+4.  Open [http://localhost:3000](http://localhost:3000) to view the portal.
+
+---
 
 ## 🛠 Project Structure
-- `src/app`: App Router pages and layout.
-- `src/components`: UI components (Navbar, Hero, ContactForm, etc.).
-- `src/hooks`: Custom hooks (`useScrollScale`).
-- `public`: Static assets.
 
-## 🧪 Testing
-Run the example contact form test:
-```bash
-npm test
-```
-(Requires Jest setup, see `jest.config.js` if needed. Included `__tests__/ContactForm.test.jsx` is ready for RTL).
+- **`src/app/`**: The command center. Contains all routes (`page.tsx`), layouts (`layout.tsx`), and global styles.
+- **`src/components/`**: The tactical assets. Reusable UI components like `ApproachCycle`, `Navbar`, and `CyberBackground`.
+- **`public/`**: Static intel. Images, icons, and media assets.
 
-## 📝 Copy Deck (Handcrafted)
+---
 
-### Hero Headlines
-1. **Short**: "Secure the Future."
-2. **Medium**: "Offensive Security for the Decentralized Web."
-3. **Long**: "Advanced threat detection and adversarial simulation. We break your systems before they do."
+## 🤝 How to Contribute
 
-### Founder Bio
-"Founded by ex-APT researchers and cryptography PhDs, ScriptJacker brings state-level offensive capabilities to the commercial sector. We believe security is not a product, but a continuous state of resistance."
+We believe that open collaboration builds the strongest tools. Whether you're a frontend wizard, a design virtuoso, or a bug hunter, we welcome your contributions.
 
-### Testimonials
-- "ScriptJacker found vulnerabilities our previous three audits missed." – CTO, DeFi Protocol
-- "Their red team operation was terrifyingly effective. Best money we ever spent." – CISO, FinTech Corp
+### The Protocol (Contribution Cycle)
+
+1.  **Fork the Repository**: Click the "Fork" button on the top right to create your own copy of the base.
+2.  **Create a Branch**: Isolate your changes.
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+3.  **Make Your Changes**: Write clean, modern code. If you're adding a feature, make sure it looks "premium" and fits the cyber-aesthetic.
+4.  **Commit with Purpose**:
+    ```bash
+    git commit -m "feat: Add holographic navigation menu"
+    ```
+5.  **Push to the Edge**:
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+6.  **Open a Pull Request (PR)**: Target the `main` branch. Describe your changes, why they matter, and attach screenshots if it's visual.
+
+### Contribution Rules
+- **Code Style**: We use strict TypeScript. Ensure no `any` types slip through.
+- **Aesthetics**: Maintain the dark/neon theme. No generic Bootstrap vibes allowed.
+- **Performance**: Keep it fast. If you add heavy assets, optimize them.
+
+---
+
+## 📜 License
+
+This project is proprietary and confidential. Unauthorized copying is prohibited.
+*(Or insert open source license if applicable)*
+
+---
+
+*Built with precision by the Cyber_Secure Team.*
