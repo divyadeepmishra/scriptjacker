@@ -42,17 +42,17 @@ export default function Hero() {
 
           <ScrollWrapper delay={0.1}>
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-8 leading-tight min-h-[3em]">
-               <TypewriterText
+                <TypewriterText
                   text="Vulnerabilities "
-                  speed={0.15}
+                  speed={100}
                   onComplete={() => setIsFirstLineDone(true)}
                />
                <br />
                <TypewriterText
                   text="Die Here."
                   className="text-transparent bg-clip-text bg-gradient-to-r from-neon-teal to-neon-purple"
-                  speed={0.15}
-                  available={isFirstLineDone}
+                  speed={100}
+                  startCondition={isFirstLineDone}
                />
             </h1>
           </ScrollWrapper>
