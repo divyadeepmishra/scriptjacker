@@ -1,10 +1,5 @@
 # Cyber_Secure 🛡️
 
-**"We break your systems before they do."**
-
-Welcome to the digital frontline. **Cyber_Secure** is not just a marketing site; it's a high-performance, interactive showcase of elite offensive security capabilities. Built to captivate and convert, it combines a sleek, dark-themed "hacker" aesthetic with bleeding-edge web technologies.
-
-This project is designed to be as robust as the security services it represents—fast, secure, and visually striking.
 
 ---
 
