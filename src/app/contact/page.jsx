@@ -2,6 +2,7 @@
 
 import ContactForm from '@/components/ContactForm';
 import ScrollWrapper from '@/components/ScrollWrapper';
+import TypewriterText from '@/components/TypewriterText';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
 export default function ContactPage() {
@@ -54,17 +55,35 @@ export default function ContactPage() {
           </ScrollWrapper>
 
           <ScrollWrapper delay={0.3}>
-             <div className="bg-white p-10 rounded-[2rem] text-dark shadow-2xl">
-                <h3 className="text-2xl font-bold text-neon-teal mb-4">What Happens Next?</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                   Fill out the form above, and one of our team members will get back to you as soon as possible. We value your privacy and confidentiality—your information is secure with us.
-                </p>
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                   If you're interested in a tailored security solution or want to explore collaboration opportunities, let us know in the message section, and we'll work with you to create a plan that fits your unique requirements.
-                </p>
-                <p className="text-gray-800 font-semibold">
-                   Let's work together to protect your digital future. We look forward to hearing from you!
-                </p>
+             <div className="bg-surface/30 backdrop-blur-md border border-white/10 p-10 rounded-[2rem] shadow-2xl relative overflow-hidden group hover:border-neon-teal/30 transition-all duration-500">
+                {/* Background Glow */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-neon-teal/5 rounded-full blur-[100px] -z-10 pointer-events-none" />
+
+                <h3 className="text-2xl font-bold text-neon-teal mb-6">What Happens Next?</h3>
+
+                <div className="space-y-6 text-gray-300 leading-relaxed">
+                   <p>
+                      <TypewriterText
+                        text="Fill out the form above, and one of our team members will get back to you as soon as possible. We value your privacy and confidentiality—your information is secure with us."
+                        delay={0.5}
+                        speed={20}
+                      />
+                   </p>
+                   <p>
+                      <TypewriterText
+                        text="If you're interested in a tailored security solution or want to explore collaboration opportunities, let us know in the message section, and we'll work with you to create a plan that fits your unique requirements."
+                        delay={3.5}
+                        speed={20}
+                      />
+                   </p>
+                   <p className="font-semibold text-white">
+                      <TypewriterText
+                        text="Let's work together to protect your digital future. We look forward to hearing from you!"
+                        delay={8}
+                        speed={30}
+                      />
+                   </p>
+                </div>
              </div>
           </ScrollWrapper>
        </div>

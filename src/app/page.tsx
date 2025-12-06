@@ -6,7 +6,7 @@ import Hero from '@/components/Hero';
 import ScrollWrapper from '@/components/ScrollWrapper';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
-import { CreditCard, FileCheck, FileJson, FileSignature, Globe, Handshake, MailWarning, Network, Puzzle, Smartphone, Sparkles, Star, Users, Workflow, ZoomIn } from 'lucide-react';
+import { CreditCard, FileCheck, FileJson, FileSignature, Globe, Handshake, Lock, MailWarning, Network, Puzzle, Smartphone, Star, Users, Workflow, ZoomIn } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
             <ServiceCard
                title="API Security Testing"
                description="Our experts rigorously test your APIs to safeguard data integrity and prevent unauthorized access, keeping your integrations bulletproof."
-               icon={Sparkles}
+               icon={Lock}
                delay={0.15}
             />
             <ServiceCard

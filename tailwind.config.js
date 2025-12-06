@@ -13,7 +13,7 @@ module.exports = {
         foreground: "var(--foreground)",
         dark: "#070812",
         "neon-teal": "#00f0ff",
-        "neon-purple": "#bf00ff",
+        "neon-purple": "#39ff14",
         "surface": "#0e101f",
         "surface-highlight": "#1a1d33"
       },

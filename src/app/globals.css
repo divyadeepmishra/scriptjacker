@@ -5,7 +5,7 @@
   --color-foreground: var(--foreground);
   --color-dark: #000000; /* Pure Black */
   --color-neon-teal: #00b8ff; /* Cyber Blue (Less Green) */
-  --color-neon-purple: #9d00ff;
+  --color-neon-purple: #39ff14;
   --color-surface: #05060a; /* Darker Surface */
   --color-surface-highlight: #0f111a;
 
@@ -77,7 +77,7 @@ a, button, [role="button"], input[type="submit"], input[type="button"] {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #bf00ff;
+  background: #39ff14;
 }
 
 @utility glass-panel {
@@ -102,7 +102,7 @@ a, button, [role="button"], input[type="submit"], input[type="button"] {
   background: linear-gradient(
     to right,
     #00f0ff,
-    #bf00ff,
+    #39ff14,
     #00f0ff
   );
   background-size: 200% auto;
