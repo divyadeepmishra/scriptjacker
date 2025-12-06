@@ -3,6 +3,7 @@
 import ApproachCycle from '@/components/ApproachCycle';
 import CraftingTrust from '@/components/CraftingTrust';
 import Hero from '@/components/Hero';
+import HomeStats from '@/components/HomeStats';
 import ScrollWrapper from '@/components/ScrollWrapper';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-20 pb-20">
       <Hero />
+      <HomeStats />
 
       {/* Services Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,15 +82,15 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Project-Based */}
               <ScrollWrapper delay={0.1}>
-                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
-                    <div className="w-14 h-14 rounded-2xl bg-neon-teal/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                       <Workflow className="w-8 h-8 text-neon-teal" />
+                 <div className="group h-full p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
+                    <div className="w-14 h-14 rounded-2xl bg-neon-purple/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                       <Workflow className="w-8 h-8 text-neon-purple" />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-4">Project-Based</h3>
                     <p className="text-gray-400 mb-6 leading-relaxed">
                        You are having lots of projects? We'll assess your web apps, APIs, mobile apps, or network for vulnerabilities, provide a detailed report, and guide you on fixing the issues. Best for businesses that want to test specific assets before launching or after major updates.
                     </p>
-                    <Link href="/contact" className="inline-flex items-center px-6 py-2 rounded-full bg-neon-teal/10 text-neon-teal font-bold hover:bg-neon-teal hover:text-white transition-all text-sm uppercase tracking-wide">
+                    <Link href="/contact" className="inline-flex items-center px-6 py-2 rounded-full bg-neon-purple/10 text-neon-purple font-bold hover:bg-neon-purple hover:text-white transition-all text-sm uppercase tracking-wide">
                        Know More
                     </Link>
                  </div>
@@ -96,7 +98,7 @@ export default function Home() {
 
               {/* Contract-Based */}
               <ScrollWrapper delay={0.2}>
-                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
+                 <div className="group h-full p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
                     <div className="w-14 h-14 rounded-2xl bg-neon-purple/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                        <FileSignature className="w-8 h-8 text-neon-purple" />
                     </div>
@@ -112,15 +114,15 @@ export default function Home() {
 
               {/* Retainer Model */}
               <ScrollWrapper delay={0.3}>
-                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
-                    <div className="w-14 h-14 rounded-2xl bg-neon-teal/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                       <Handshake className="w-8 h-8 text-neon-teal" />
+                 <div className="group h-full p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
+                    <div className="w-14 h-14 rounded-2xl bg-neon-purple/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                       <Handshake className="w-8 h-8 text-neon-purple" />
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-4">Retainer Model</h3>
                     <p className="text-gray-400 mb-6 leading-relaxed">
                        Need ongoing security support? We act as your security partner, performing regular vulnerability assessments, quick response to threats, and on-demand testing whenever required. Perfect for businesses looking for continuous protection.
                     </p>
-                    <Link href="/contact" className="inline-flex items-center px-6 py-2 rounded-full bg-neon-teal/10 text-neon-teal font-bold hover:bg-neon-teal hover:text-white transition-all text-sm uppercase tracking-wide">
+                    <Link href="/contact" className="inline-flex items-center px-6 py-2 rounded-full bg-neon-purple/10 text-neon-purple font-bold hover:bg-neon-purple hover:text-white transition-all text-sm uppercase tracking-wide">
                        Know More
                     </Link>
                  </div>
@@ -128,7 +130,7 @@ export default function Home() {
 
               {/* Subscription-Based */}
               <ScrollWrapper delay={0.4}>
-                 <div className="group p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
+                 <div className="group h-full p-8 rounded-[2.5rem] bg-surface/30 border border-white/5 shadow-lg hover:shadow-neon-teal/20 hover:border-neon-teal/30 hover:bg-surface/50 transition-all duration-300">
                     <div className="w-14 h-14 rounded-2xl bg-neon-purple/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                        <CreditCard className="w-8 h-8 text-neon-purple" />
                     </div>

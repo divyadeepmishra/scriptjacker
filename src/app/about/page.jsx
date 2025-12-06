@@ -73,8 +73,8 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-surface/20 border-y border-white/5">
-         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8">
+         <div className="bg-surface/20 border border-white/5 rounded-[2.5rem] px-6 md:px-12 backdrop-blur-sm">
             <div className="flex flex-col md:flex-row items-center justify-between py-12 gap-8">
                <div className="md:w-1/4">
                   <h3 className="text-2xl font-bold text-white mb-2">Some Numbers</h3>

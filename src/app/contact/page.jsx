@@ -92,6 +92,24 @@ export default function ContactPage() {
              </div>
           </ScrollWrapper>
        </div>
+      <ScrollWrapper delay={0.4}>
+         <div className="mt-24 max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">Frequently Asked <span className="text-neon-teal">Questions</span></h2>
+            <div className="space-y-6">
+               {[
+                 { q: "How long does a typical pentest take?", a: "Depending on the scope and complexity, a standard web application pentest usually takes 1-2 weeks." },
+                 { q: "Do you provide re-testing?", a: "Yes, we offer one round of complimentary re-testing within 30 days of the initial report to verify fixes." },
+                 { q: "Is my data safe during testing?", a: "Absolutely. We follow strict non-disclosure agreements and industry-standard protocols to ensure your data remains confidential and secure." },
+                 { q: "What format are the reports in?", a: "We provide comprehensive PDF reports with executive summaries for management and technical details for developers, along with CSV exports if needed." }
+               ].map((faq, i) => (
+                 <div key={i} className="bg-surface/30 border border-white/5 rounded-2xl p-6 hover:border-neon-teal/30 transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-3">{faq.q}</h3>
+                    <p className="text-gray-400">{faq.a}</p>
+                 </div>
+               ))}
+            </div>
+         </div>
+      </ScrollWrapper>
     </div>
   );
 }

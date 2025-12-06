@@ -13,7 +13,7 @@ const navItems = [
   { name: 'Services', href: '/services' },
   { name: 'Contact', href: '/contact' },
   { name: 'Team', href: '/team' },
-  { name: 'Blogs', href: '/blog' },
+  { name: 'Blogs', href: 'https://blogs.scriptjacker.in' },
 ];
 
 export default function Navbar() {
@@ -61,10 +61,13 @@ export default function Navbar() {
         <div className={cn("hidden md:flex items-center space-x-1 p-1 rounded-full", isScrolled ? "bg-white/5 border border-white/5" : "")}>
             {navItems.map((item) => {
               const isActive = pathname === item.href;
+              const isExternal = item.href.startsWith('http');
               return (
                 <Link
                   key={item.name}
                   href={item.href}
+                  target={isExternal ? "_blank" : undefined}
+                  rel={isExternal ? "noopener noreferrer" : undefined}
                   className={cn(
                     "relative px-5 py-2.5 text-sm font-medium transition-all rounded-full hover:shadow-[0_0_20px_-5px_rgba(255,255,255,0.2)]",
                     isActive
@@ -107,7 +110,7 @@ export default function Navbar() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="absolute top-20 left-4 right-4 p-6 rounded-3xl bg-dark/95 backdrop-blur-xl border border-white/10 shadow-2xl md:hidden"
+            className="pointer-events-auto absolute top-20 left-4 right-4 p-6 rounded-3xl bg-dark/95 backdrop-blur-xl border border-white/10 shadow-2xl md:hidden"
           >
              <div className="flex flex-col space-y-4">
               {navItems.map((item) => (

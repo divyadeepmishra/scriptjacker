@@ -34,6 +34,27 @@ export default function ServicesPage() {
         ))}
       </div>
 
+      <ScrollWrapper>
+        <div className="w-full bg-surface/30 border border-white/5 rounded-[2.5rem] p-10 mb-20">
+           <div className="flex flex-col md:flex-row justify-between items-center gap-10">
+              <div className="max-w-2xl">
+                 <h2 className="text-3xl font-bold text-white mb-4">Opportunities</h2>
+                 <p className="text-gray-300 leading-relaxed mb-6">
+                   We are always looking for talented individuals to join our red team. Whether you are a student looking for an internship or a professional seeking part-time engagements, we have a spot for you.
+                 </p>
+                 <div className="flex flex-wrap gap-4">
+                    <span className="px-4 py-2 rounded-full bg-neon-teal/10 text-neon-teal text-sm font-bold border border-neon-teal/20">Part-Time Pentester</span>
+                    <span className="px-4 py-2 rounded-full bg-neon-purple/10 text-neon-purple text-sm font-bold border border-neon-purple/20">Security Intern</span>
+                    <span className="px-4 py-2 rounded-full bg-white/10 text-white text-sm font-bold border border-white/20">Research Analyst</span>
+                 </div>
+              </div>
+              <a href="mailto:careers@scriptjacker.in" className="shrink-0 px-8 py-4 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform">
+                 Apply Now
+              </a>
+           </div>
+        </div>
+      </ScrollWrapper>
+
        <ScrollWrapper>
           <div className="text-center mb-12">
              <h2 className="text-3xl font-bold text-white">What Our Clients Say</h2>

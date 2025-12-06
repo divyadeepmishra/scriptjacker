@@ -45,11 +45,11 @@ export default function TestimonialCarousel() {
          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-dark to-transparent z-10 pointer-events-none" />
          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-dark to-transparent z-10 pointer-events-none" />
 
-         <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+         <div className="flex w-max animate-marquee hover:[animation-play-state:paused] gap-6 px-4">
             {duplicatedTestimonials.map((t, i) => (
               <div
                  key={`${t.id}-${i}`}
-                 className="w-[400px] md:w-[500px] mx-6 p-10 rounded-[3.5rem] bg-surface/40 border border-white/5 relative flex flex-col justify-between hover:bg-surface/60 hover:border-neon-teal/50 hover:shadow-[0_0_60px_-15px_var(--color-neon-teal)] transition-all duration-500 select-none group backdrop-blur-md"
+                 className="w-[400px] md:w-[600px] shrink-0 p-8 md:p-12 rounded-[2.5rem] bg-surface/40 border border-white/5 relative flex flex-col justify-between hover:bg-surface/60 hover:border-neon-teal/50 hover:shadow-[0_0_60px_-15px_var(--color-neon-teal)] transition-all duration-500 select-none group backdrop-blur-md"
               >
                  <Quote className="absolute top-8 right-8 text-white/5 w-12 h-12 group-hover:text-neon-teal/20 transition-colors duration-500" />
 

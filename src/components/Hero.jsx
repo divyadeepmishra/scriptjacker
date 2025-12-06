@@ -86,7 +86,7 @@ export default function Hero() {
            initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
            animate={{ opacity: 1, scale: 1, rotate: 0 }}
            transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-           className="relative h-[350px] md:h-[500px] w-full flex items-center justify-center perspective-1000 mt-10 lg:mt-0"
+           className="hidden md:flex relative h-[350px] md:h-[500px] w-full items-center justify-center perspective-1000 mt-10 lg:mt-0"
         >
            <style jsx global>{`
              .preserve-3d { transform-style: preserve-3d; }
