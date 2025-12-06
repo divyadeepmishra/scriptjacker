@@ -261,8 +261,8 @@ export default function PrivacyPage() {
               If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
             </p>
             <div className="space-y-2 text-gray-300">
-              <p><strong className="text-white">Email:</strong> <a href="mailto:support@scriptjacker.in" className="text-neon-teal hover:underline">support@scriptjacker.in</a></p>
-              <p><strong className="text-white">Phone:</strong> <a href="tel:+917497054662" className="text-neon-teal hover:underline">+91 7497054662</a></p>
+              <p><strong className="text-white">Email:</strong> <a href="#" className="text-neon-teal hover:underline">email@example.com</a></p>
+              <p><strong className="text-white">Phone:</strong> <a href="#" className="text-neon-teal hover:underline">+91 XXXXXXXXXX</a></p>
               <p><strong className="text-white">Company:</strong> ScriptJacker LLP</p>
             </div>
           </div>

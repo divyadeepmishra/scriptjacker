@@ -14,7 +14,7 @@ const navItems = [
   { name: 'Services', href: '/services' },
   { name: 'Contact', href: '/contact' },
   { name: 'Team', href: '/team' },
-  { name: 'Blogs', href: 'https://blogs.scriptjacker.in' },
+  { name: 'Case Studies', href: '/case-studies' },
 ];
 
 export default function Navbar() {

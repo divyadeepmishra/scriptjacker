@@ -27,14 +27,14 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <p className="text-gray-400">
                 <span className="text-white font-semibold">Email:</span>{' '}
-                <a href="mailto:support@scriptjacker.in" className="text-neon-teal hover:underline">
-                  support@scriptjacker.in
+                <a href="#" className="text-neon-teal hover:underline">
+                  email@example.com
                 </a>
               </p>
               <p className="text-gray-400">
                 <span className="text-white font-semibold">Phone:</span>{' '}
-                <a href="tel:+917497054662" className="text-neon-teal hover:underline">
-                  +91 7497054662
+                <a href="#" className="text-neon-teal hover:underline">
+                  +91 XXXXXXXXXX
                 </a>
               </p>
             </div>
@@ -84,10 +84,10 @@ export default function Footer() {
 
             <h3 className="text-white font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
-               <a href="https://x.com/scriptjacker" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all" aria-label="Twitter"><Twitter size={20} /></a>
-               <a href="https://www.instagram.com/scriptjacker" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all" aria-label="Instagram"><Instagram size={20} /></a>
-               <a href="https://www.linkedin.com/company/scriptjacker/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all" aria-label="LinkedIn"><Linkedin size={20} /></a>
-               <a href="https://github.com/scriptjacker/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all" aria-label="GitHub"><Github size={20} /></a>
+               <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all" aria-label="Twitter"><Twitter size={20} /></a>
+               <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all" aria-label="Instagram"><Instagram size={20} /></a>
+               <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all" aria-label="LinkedIn"><Linkedin size={20} /></a>
+               <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white hover:scale-110 transition-all" aria-label="GitHub"><Github size={20} /></a>
             </div>
           </div>
 

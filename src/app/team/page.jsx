@@ -5,13 +5,13 @@ import Link from 'next/link';
 export default function TeamPage() {
   const team = [
     {
-      name: "Parth Narula",
-      role: "Founder · Penetration Tester",
+      name: "Team Lead",
+      role: "Lead Penetration Tester",
       bio: "Leading the charge in offensive security. Expert in identifying critical vulnerabilities and securing digital assets.",
       image: "",
       address: "India",
-      phone: "+91 7497054662",
-      email: "support@scriptjacker.in",
+      phone: "+91 XXXXXXXXXX",
+      email: "email@example.com",
       linkedin: "https://linkedin.com"
     },
     {

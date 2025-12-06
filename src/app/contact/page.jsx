@@ -23,7 +23,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-gray-500 uppercase">Email</h4>
-                      <p className="text-lg text-white">support@scriptjacker.in</p>
+                      <p className="text-lg text-white">email@example.com</p>
                     </div>
                  </div>
 
@@ -43,7 +43,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-gray-500 uppercase">Phone</h4>
-                      <p className="text-lg text-white">+91 7497054662</p>
+                      <p className="text-lg text-white">+91 XXXXXXXXXX</p>
                     </div>
                  </div>
                </div>

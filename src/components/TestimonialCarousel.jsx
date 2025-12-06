@@ -25,13 +25,6 @@ const testimonials = [
     role: "Co-Founder",
     company: "DLX MEDIA LLC & SCTR SERVICES LLC"
   },
-  {
-    id: 4,
-    quote: "Parth proactively identified security concerns and provided a thorough, well-documented report. His insights helped us address vulnerabilities efficiently. Great work!",
-    author: "Dave Lowe",
-    role: "Founder & CEO",
-    company: "ISIFEDERAL"
-  }
 ];
 
 export default function TestimonialCarousel() {
