@@ -17,7 +17,7 @@ const dots = [
 export default function WorldMap() {
   return (
     <div className="w-full relative">
-       <div className="relative w-full aspect-[1.8] rounded-[2.5rem] overflow-hidden border border-white/10 bg-white/5 shadow-2xl">
+       <div className="relative w-full aspect-[1.8] rounded-2xl md:rounded-[2.5rem] overflow-hidden border border-white/10 bg-white/5 shadow-2xl">
             {/*
               User provided a styled map image (Gray on White).
               To match the Dark/Neon theme:

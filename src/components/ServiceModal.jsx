@@ -52,15 +52,15 @@ export default function ServiceModal({ isOpen, onClose, title, description, icon
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="w-full max-w-lg bg-dark border border-white/10 rounded-3xl overflow-hidden shadow-2xl pointer-events-auto relative"
+              className="w-full max-w-lg bg-dark border border-white/10 rounded-3xl shadow-2xl pointer-events-auto relative max-h-[85vh] overflow-y-auto"
             >
-              {/* Header Gradient */}
+              {/* Header Gradient (Fixed) */}
               <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-br from-neon-teal/20 to-neon-purple/20 pointer-events-none" />
 
-              <div className="relative p-8">
+              <div className="relative p-6 md:p-8">
                 <button
                   onClick={onClose}
-                  className="absolute top-4 right-4 p-2 rounded-full bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-colors z-10"
+                  className="sticky top-0 float-right ml-auto p-2 rounded-full bg-black/50 hover:bg-white/10 text-white backdrop-blur-md border border-white/10 transition-colors z-50 mb-4"
                 >
                   <X size={20} />
                 </button>

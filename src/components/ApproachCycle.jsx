@@ -183,7 +183,7 @@ export default function ApproachCycle() {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="relative pl-20"
+                className="relative pl-14 md:pl-20"
              >
                 {/* Connector Dot */}
                 <div className="absolute left-5 top-0 w-6 h-6 -ml-[13px] rounded-full bg-dark border-2 border-neon-teal z-10 flex items-center justify-center">

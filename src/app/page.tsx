@@ -240,7 +240,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-         <div className="relative rounded-[3rem] overflow-hidden bg-white/5 border border-white/10 p-16 text-center group hover:border-neon-teal/30 transition-all duration-500">
+         <div className="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden bg-white/5 border border-white/10 p-8 md:p-16 text-center group hover:border-neon-teal/30 transition-all duration-500">
             <div className="absolute inset-0 bg-dark/50 backdrop-blur-sm -z-10" />
             <div className="absolute -top-24 -left-24 w-64 h-64 bg-neon-teal/20 rounded-full blur-[100px]" />
             <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-neon-purple/20 rounded-full blur-[100px]" />

@@ -14,7 +14,7 @@ export default function ServiceCard({ title, description, icon: Icon, delay = 0,
         {/* Stronger External Glow */}
         <div className="absolute inset-0 rounded-[2.5rem] shadow-[0_0_0_0_transparent] group-hover:shadow-[0_0_40px_-5px_var(--color-neon-teal)] transition-shadow duration-500 z-0 pointer-events-none" />
 
-        <div className="relative z-10 flex flex-col items-start h-full p-8 flex-grow">
+        <div className="relative z-10 flex flex-col items-start h-full p-6 md:p-8 flex-grow">
            {/* Header with Icon */}
            <div className="w-full flex justify-between items-start mb-6">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-transform duration-500 shadow-[0_0_20px_-5px_rgba(255,255,255,0.2)]">
