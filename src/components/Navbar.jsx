@@ -12,8 +12,8 @@ const navItems = [
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
   { name: 'Contact', href: '/contact' },
-  { name: 'Blogs', href: '/blog' },
   { name: 'Team', href: '/team' },
+  { name: 'Blogs', href: '/blog' },
 ];
 
 export default function Navbar() {
@@ -53,7 +53,7 @@ export default function Navbar() {
                 "text-lg font-bold tracking-tight transition-all duration-300",
                 isScrolled ? "text-white" : "text-white"
             )}>
-              ScriptJacker
+              ScriptJacker LLP
             </span>
         </Link>
 

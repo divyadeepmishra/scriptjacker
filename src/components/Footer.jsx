@@ -14,7 +14,7 @@ export default function Footer() {
                     <Shield className="w-5 h-5 text-white" />
                   </div>
               </div>
-              <span className="text-xl font-bold text-white">ScriptJacker</span>
+              <span className="text-xl font-bold text-white">ScriptJacker LLP</span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Advanced offensive security for the modern web. We secure the future by breaking it first.
@@ -48,7 +48,7 @@ export default function Footer() {
                <a href="#" className="text-gray-400 hover:text-white hover:scale-110 transition-all"><Github size={20} /></a>
             </div>
             <div className="mt-4">
-               <p className="text-xs text-gray-500">© {new Date().getFullYear()} ScriptJacker. All Rights Reserved. Powered by ScriptJacker.</p>
+               <p className="text-xs text-gray-500">© {new Date().getFullYear()} ScriptJacker LLP. All Rights Reserved. Powered by ScriptJacker LLP.</p>
                <div className="flex space-x-2 mt-2 text-xs text-gray-500">
                  <Link href="/privacy" className="hover:text-gray-300">Privacy</Link>
                  <span>•</span>

@@ -11,7 +11,7 @@ const HexagonGrid = () => {
   // Creating a grid of hexagons
   // This is a simplified SVG pattern that scales well
   return (
-    <div className="absolute inset-0 z-0 overflow-hidden opacity-[0.3]">
+    <div className="absolute inset-0 z-0 overflow-hidden opacity-[0.6]">
       <svg className="w-full h-full" width="100%" height="100%">
         <pattern
           id="hex-grid"
@@ -32,8 +32,8 @@ const HexagonGrid = () => {
         </pattern>
         <defs>
           <linearGradient id="hex-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#00b8ff" />
-            <stop offset="100%" stopColor="#bf00ff" />
+            <stop offset="0%" stopColor="#00334d" />
+            <stop offset="100%" stopColor="#001824" />
           </linearGradient>
         </defs>
         <rect width="100%" height="100%" fill="url(#hex-grid)" />
@@ -83,7 +83,7 @@ export default function CyberBackground() {
   return (
     <div className="fixed inset-0 bg-black z-[-1] overflow-hidden">
        {/* 1. Deepest Space Base */}
-       <div className="absolute inset-0 bg-black" />
+       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-[#00695c] via-[#004d40] to-[#010a08]" />
 
        {/* 2. Hexagonal Grid Mesh */}
        <HexagonGrid />
@@ -93,14 +93,14 @@ export default function CyberBackground() {
        <motion.div
          className="absolute top-[-20%] left-[-10%] w-[70vw] h-[70vw] mix-blend-screen"
        >
-         <EtherLayer color="#00b8ff" opacity={0.12} duration={25} />
+         <EtherLayer color="#004d40" opacity={0.15} duration={25} />
        </motion.div>
 
        {/* Purple Ether - Stronger */}
        <motion.div
          className="absolute bottom-[-20%] right-[-10%] w-[80vw] h-[80vw] mix-blend-screen"
        >
-         <EtherLayer color="#bf00ff" opacity={0.10} delay={5} duration={30} />
+         <EtherLayer color="#004d40" opacity={0.30} delay={5} duration={30} />
        </motion.div>
 
        {/* New Center Ether - Pulse */}

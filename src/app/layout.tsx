@@ -7,7 +7,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata = {
-  title: 'ScriptJacker | Offensive Security Strategies',
+  title: 'ScriptJackerLLP | Offensive Security Strategies',
   description: 'Advanced cybersecurity solutions. Penetration testing, red teaming, and smart contract audits. We break it before they do.',
 };
 

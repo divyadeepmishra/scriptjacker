@@ -4,6 +4,7 @@ import ScrollWrapper from '@/components/ScrollWrapper';
 import { useScrollScale } from '@/hooks/useScrollScale';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 import { lazy } from 'react';
 
 // Lazy load Spline to avoid blocking main thread
@@ -46,7 +47,7 @@ export default function Hero() {
 
           <ScrollWrapper delay={0.2}>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed max-w-lg">
-              Cyber threats don't wait. Neither should you. At <strong className="text-white">ScriptJacker</strong>, we go beyond automated scans, performing <strong className="text-white">deep manual penetration testing</strong> to identify and eliminate real-world vulnerabilities before attackers do.
+              Cyber threats don't wait. Neither should you. At <strong className="text-white">ScriptJacker LLP</strong>, we go beyond automated scans, performing <strong className="text-white">deep manual penetration testing</strong> to identify and eliminate real-world vulnerabilities before attackers do.
             </p>
 
             <ul className="space-y-3 mb-10">
@@ -69,11 +70,13 @@ export default function Hero() {
 
           <ScrollWrapper delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-5">
-              <button className="group relative px-10 py-5 bg-neon-teal text-white font-bold text-lg rounded-full overflow-hidden hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_var(--color-neon-teal)] hover:shadow-[0_0_60px_-10px_var(--color-neon-teal)] uppercase tracking-wider">
-                <span className="relative z-10 flex items-center">
-                  Request a Quote <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </span>
-              </button>
+              <Link href="/contact">
+                <button className="group relative px-10 py-5 bg-neon-teal text-white font-bold text-lg rounded-full overflow-hidden hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_var(--color-neon-teal)] hover:shadow-[0_0_60px_-10px_var(--color-neon-teal)] uppercase tracking-wider">
+                  <span className="relative z-10 flex items-center">
+                    Request a Quote <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </button>
+              </Link>
             </div>
           </ScrollWrapper>
         </motion.div>
