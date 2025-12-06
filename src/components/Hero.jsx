@@ -18,7 +18,7 @@ export default function Hero() {
   const { scale, opacity } = useScrollScale();
 
   return (
-    <section className="relative w-full min-h-screen pt-32 flex items-center overflow-hidden bg-dark">
+    <section className="relative w-full min-h-screen pt-24 md:pt-32 flex items-center overflow-hidden bg-dark">
       {/* Background Gradients */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
          <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-neon-purple/20 blur-[150px] rounded-full animate-float" />
@@ -29,35 +29,35 @@ export default function Hero() {
 
         {/* Text Content */}
         <motion.div
-          style={{ opacity, transform: `scale(${scale})` }}
-          className="max-w-2xl"
+            style={{ opacity, transform: `scale(${scale})` }}
+            className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
         >
           <ScrollWrapper>
-            <h1 className="text-xl md:text-2xl font-bold text-white mb-4 tracking-wide">
+            <h1 className="text-lg md:text-2xl font-bold text-white mb-4 tracking-wide">
               We do actual pentests – not just scans.
             </h1>
           </ScrollWrapper>
 
           <ScrollWrapper delay={0.1}>
-            <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-8 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-8 leading-tight">
               Vulnerabilities <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-teal to-neon-purple animate-gradient-text">Die Here.</span>
             </h1>
           </ScrollWrapper>
 
           <ScrollWrapper delay={0.2}>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed max-w-lg">
+            <p className="text-base md:text-lg text-gray-300 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
               Cyber threats don't wait. Neither should you. At <strong className="text-white">ScriptJacker LLP</strong>, we go beyond automated scans, performing <strong className="text-white">deep manual penetration testing</strong> to identify and eliminate real-world vulnerabilities before attackers do.
             </p>
 
-            <ul className="space-y-3 mb-10">
+            <ul className="space-y-3 mb-10 text-left max-w-md mx-auto lg:mx-0">
                {[
                  "One Client at a Time – 100% Focus",
                  "Quality Over Quantity – No Rushed Reports",
                  "Web, API, Mobile & Network Security Testing"
                ].map((item, i) => (
-                 <li key={i} className="flex items-center text-gray-300">
-                    <div className="w-5 h-5 rounded-full bg-neon-teal flex items-center justify-center mr-3 mt-0.5 shadow-[0_0_10px_-2px_var(--color-neon-teal)]">
+                 <li key={i} className="flex items-center text-gray-300 text-sm md:text-base">
+                    <div className="w-5 h-5 rounded-full bg-neon-teal flex items-center justify-center mr-3 mt-0.5 shadow-[0_0_10px_-2px_var(--color-neon-teal)] shrink-0">
                        <svg className="w-3 h-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                        </svg>
@@ -69,10 +69,10 @@ export default function Hero() {
           </ScrollWrapper>
 
           <ScrollWrapper delay={0.3}>
-            <div className="flex flex-col sm:flex-row gap-5">
+            <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
               <Link href="/contact">
-                <button className="group relative px-10 py-5 bg-neon-teal text-white font-bold text-lg rounded-full overflow-hidden hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_var(--color-neon-teal)] hover:shadow-[0_0_60px_-10px_var(--color-neon-teal)] uppercase tracking-wider">
-                  <span className="relative z-10 flex items-center">
+                <button className="group relative px-8 py-4 md:px-10 md:py-5 bg-neon-teal text-white font-bold text-base md:text-lg rounded-full overflow-hidden hover:scale-105 transition-all duration-300 shadow-[0_0_40px_-10px_var(--color-neon-teal)] hover:shadow-[0_0_60px_-10px_var(--color-neon-teal)] uppercase tracking-wider w-full sm:w-auto">
+                  <span className="relative z-10 flex items-center justify-center">
                     Request a Quote <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </button>
@@ -86,7 +86,7 @@ export default function Hero() {
            initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
            animate={{ opacity: 1, scale: 1, rotate: 0 }}
            transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-           className="relative h-[500px] w-full flex items-center justify-center perspective-1000"
+           className="relative h-[350px] md:h-[500px] w-full flex items-center justify-center perspective-1000 mt-10 lg:mt-0"
         >
            <style jsx global>{`
              .preserve-3d { transform-style: preserve-3d; }

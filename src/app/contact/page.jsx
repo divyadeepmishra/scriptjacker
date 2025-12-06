@@ -60,7 +60,7 @@ export default function ContactPage() {
        {/* Full Width "What Happens Next" Section */}
        <div className="w-full">
           <ScrollWrapper delay={0.3}>
-             <div className="bg-surface/30 backdrop-blur-md border border-white/10 p-10 rounded-[2rem] shadow-2xl relative overflow-hidden group hover:border-neon-teal/30 transition-all duration-500">
+             <div className="bg-surface/30 backdrop-blur-md border border-white/10 p-6 md:p-10 rounded-[1.5rem] md:rounded-[2rem] text-white shadow-2xl relative overflow-hidden group hover:border-neon-teal/30 transition-all duration-500">
                 {/* Background Glow */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-neon-teal/5 rounded-full blur-[100px] -z-10 pointer-events-none" />
 
