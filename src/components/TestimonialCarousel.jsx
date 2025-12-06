@@ -6,14 +6,14 @@ import { Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    quote: "We've recently received several security reports from Parth Narula, founder of ScriptJacker. The reports were accurate, and the discussions were constructive and fair. We're completely satisfied with the service and happy to have our security improved as a result.",
+    quote: "We've recently received several security reports from Cyber_Secure. The reports were accurate, and the discussions were constructive and fair. We're completely satisfied with the service and happy to have our security improved as a result.",
     author: "Aleksandr Tischenko",
     role: "CEO",
     company: "LAMANTINE SOFTWARE A.S."
   },
   {
     id: 2,
-    quote: "ScriptJacker has been a really nice from the start! They reached out to us kindly asking to pentest our platform, and to our surprise, came back very shortly after our confirmation with different and detailed reports. Our platform and users are safer, thanks to ScriptJacker!",
+    quote: "Cyber_Secure has been a really nice from the start! They reached out to us kindly asking to pentest our platform, and to our surprise, came back very shortly after our confirmation with different and detailed reports. Our platform and users are safer, thanks to Cyber_Secure!",
     author: "Sutty",
     role: "Team",
     company: "SUTTY LABOR COOPERATIVE LTD."

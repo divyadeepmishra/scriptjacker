@@ -62,7 +62,7 @@ export default function ApproachCycle() {
 
                  <div className="relative w-20 h-20 xl:w-24 xl:h-24 bg-black rounded-full flex items-center justify-center border border-white/10 shadow-[0_0_50px_-10px_var(--color-neon-teal)] z-10">
                     <Image
-                      src="/logo.png"
+                      src="/approach-logo.png"
                       alt="Core"
                       width={50}
                       height={60}

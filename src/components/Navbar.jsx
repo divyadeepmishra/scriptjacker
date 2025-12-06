@@ -47,8 +47,8 @@ export default function Navbar() {
         <Link href="/" className="flex items-center space-x-3 group shrink-0 mr-8 pl-4">
              <div className="relative w-10 h-12 transition-transform duration-500 group-hover:scale-110">
                 <Image
-                  src="/logo.png"
-                  alt="ScriptJacker LLP Logo"
+                  src="/logo.jpg"
+                  alt="Cyber_Secure Logo"
                   fill
                   className="object-contain drop-shadow-[0_0_10px_rgba(56,239,125,0.5)]"
                   sizes="40px"
@@ -59,7 +59,7 @@ export default function Navbar() {
                 "text-lg font-bold tracking-tight transition-all duration-300",
                 isScrolled ? "text-white" : "text-white"
             )}>
-              ScriptJacker LLP
+              Cyber_Secure
             </span>
         </Link>
 

@@ -103,7 +103,7 @@ export default function ServiceModal({ isOpen, onClose, title, description, icon
                       <div>
                         <h4 className="text-neon-purple font-bold uppercase text-xs tracking-wider mb-2">Our Solution</h4>
                         <p className="text-gray-300 text-sm">
-                           ScriptJacker deployed a targeted {title} campaign. We identified critical vulnerabilities that automated tools missed and provided a remediation roadmap.
+                           Cyber_Secure deployed a targeted {title} campaign. We identified critical vulnerabilities that automated tools missed and provided a remediation roadmap.
                         </p>
                       </div>
                       <div>

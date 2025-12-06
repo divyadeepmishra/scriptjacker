@@ -21,7 +21,7 @@ export default function TeamPage() {
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
       address: "456 Crypto Blvd, New York, NY",
       phone: "+1 (555) 098-7654",
-      email: "sarah@scriptjacker.io",
+      email: "sarah@cybersecure.io",
       linkedin: "https://linkedin.com"
     },
     {
@@ -31,7 +31,7 @@ export default function TeamPage() {
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
       address: "789 Stealth Road, London, UK",
       phone: "+44 20 7123 4567",
-      email: "marcus@scriptjacker.io",
+      email: "marcus@cybersecure.io",
       linkedin: "https://linkedin.com"
     },
   ];

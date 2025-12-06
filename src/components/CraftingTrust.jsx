@@ -97,7 +97,7 @@ export default function CraftingTrust() {
            <div className="text-center max-w-4xl mx-auto mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Crafting Security, <br/><span className="text-neon-teal">Creating Trust</span></h2>
               <p className="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto">
-                Ever wonder if your current security measures are really enough? Discover how ScriptJacker's hands-on, personalized approach uncovers every hidden vulnerability to keep your business truly safe.
+                Ever wonder if your current security measures are really enough? Discover how Cyber_Secure's hands-on, personalized approach uncovers every hidden vulnerability to keep your business truly safe.
               </p>
            </div>
         </ScrollWrapper>

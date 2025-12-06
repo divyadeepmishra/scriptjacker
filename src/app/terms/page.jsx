@@ -431,7 +431,7 @@ export default function TermsPage() {
             <div className="space-y-2 text-gray-300">
               <p><strong className="text-white">Email:</strong> <a href="#" className="text-neon-teal hover:underline">email@example.com</a></p>
               <p><strong className="text-white">Phone:</strong> <a href="#" className="text-neon-teal hover:underline">+91 XXXXXXXXXX</a></p>
-              <p><strong className="text-white">Company:</strong> ScriptJacker LLP</p>
+              <p><strong className="text-white">Company:</strong> Cyber_Secure</p>
             </div>
             <p className="text-gray-400 text-sm mt-6">
               By engaging our services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.

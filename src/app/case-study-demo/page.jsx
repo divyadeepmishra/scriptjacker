@@ -59,7 +59,7 @@ export default function CaseStudyDemoPage() {
                     <h2 className="text-2xl font-bold text-white">Our Solution</h2>
                 </div>
                 <p className="text-gray-300 leading-relaxed text-lg mb-6">
-                   ScriptJacker deployed a team of senior blockchain security researchers to conduct a comprehensive audit. Our methodology included:
+                   Cyber_Secure deployed a team of senior blockchain security researchers to conduct a comprehensive audit. Our methodology included:
                 </p>
                 <ul className="space-y-4">
                     {[

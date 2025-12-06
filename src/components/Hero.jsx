@@ -59,7 +59,7 @@ export default function Hero() {
 
           <ScrollWrapper delay={0.2}>
             <p className="text-base md:text-lg text-gray-300 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Cyber threats don't wait. Neither should you. At <strong className="text-white">ScriptJacker LLP</strong>, we go beyond automated scans, performing <strong className="text-white">deep manual penetration testing</strong> to identify and eliminate real-world vulnerabilities before attackers do.
+              Cyber threats don't wait. Neither should you. At <strong className="text-white">Cyber_Secure LLP</strong>, we go beyond automated scans, performing <strong className="text-white">deep manual penetration testing</strong> to identify and eliminate real-world vulnerabilities before attackers do.
             </p>
 
             <ul className="space-y-3 mb-10 text-left max-w-md mx-auto lg:mx-0">

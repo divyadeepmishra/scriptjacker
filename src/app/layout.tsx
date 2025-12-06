@@ -7,8 +7,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata = {
-  title: 'ScriptJacker LLP',
-  description: 'Advanced cybersecurity solutions. Penetration testing, red teaming, and smart contract audits. We break it before they do.',
+  title: 'Cyber_Secure - Advanced Offensive Security',
+  description: 'Cyber_Secure provides elite penetration testing, red teaming, and smart contract auditing services to secure your digital assets.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

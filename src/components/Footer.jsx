@@ -12,14 +12,14 @@ export default function Footer() {
             <Link href="/" className="flex items-center space-x-3 group mb-4">
               <div className="relative w-8 h-10">
                  <Image
-                    src="/logo.png"
-                    alt="ScriptJacker LLP Logo"
+                    src="/logo.jpg"
+                    alt="Cyber_Secure Logo"
                     fill
                     className="object-contain"
                     sizes="32px"
                  />
               </div>
-              <span className="text-xl font-bold text-white">ScriptJacker LLP</span>
+              <span className="text-xl font-bold text-white">Cyber_Secure</span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Advanced offensive security for the modern web. We secure the future by breaking it first.
@@ -36,6 +36,9 @@ export default function Footer() {
                 <a href="#" className="text-neon-teal hover:underline">
                   +91 XXXXXXXXXX
                 </a>
+              </p>
+              <p className="text-gray-400">
+                <strong className="text-white">Company:</strong> Cyber_Secure
               </p>
             </div>
           </div>
@@ -96,7 +99,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/5 pt-8">
             <p className="text-xs text-gray-500 text-center md:text-center">
-              © {new Date().getFullYear()} ScriptJacker LLP. All Rights Reserved. | Powered by ScriptJacker LLP
+              © {new Date().getFullYear()} Cyber_Secure. All Rights Reserved. | Powered by Cyber_Secure
             </p>
         </div>
       </div>

@@ -25,7 +25,7 @@ export default function AboutPage() {
                   <div className="h-1 w-12 bg-neon-teal mb-6 rounded-full" />
                   <h3 className="text-2xl font-bold text-white mb-4">Who Are We</h3>
                   <p className="text-gray-400 leading-relaxed">
-                     ScriptJacker is a dedicated cybersecurity firm focused on authentic, hands-on penetration testing. We work exclusively with one client at a time to ensure personalized attention and real-world insights into your security posture.
+                     Cyber_Secure is a dedicated cybersecurity firm focused on authentic, hands-on penetration testing. We work exclusively with one client at a time to ensure personalized attention and real-world insights into your security posture.
                   </p>
                </div>
             </ScrollWrapper>

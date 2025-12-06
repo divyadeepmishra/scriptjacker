@@ -7,7 +7,7 @@ import { useState } from 'react';
 const reasons = [
   {
     title: "Actual Pentests, Not Just Scan",
-    description: "At ScriptJacker, we deliver genuine penetration tests—not mere scans. Our hands-on, expert evaluations expose hidden vulnerabilities that automated tools often overlook, ensuring true security.",
+    description: "At Cyber_Secure, we deliver genuine penetration tests—not mere scans. Our hands-on, expert evaluations expose hidden vulnerabilities that automated tools often overlook, ensuring true security.",
     icon: UserCheck
   },
   {
@@ -49,9 +49,9 @@ export default function WhyChooseUs() {
     <div className="flex flex-col md:flex-row gap-8 items-start">
        <div className="md:w-1/3">
           <ScrollWrapper>
-             <h2 className="text-4xl font-bold text-white mb-6">Why Choose <br className="hidden md:block"/>Scriptjacker?</h2>
+             <h2 className="text-4xl font-bold text-white mb-6">Why Choose <br className="hidden md:block"/>Cyber_Secure?</h2>
              <p className="text-gray-400 leading-relaxed mb-8">
-               At ScriptJacker, we believe that quality and clarity set us apart. We don't just run automated scans; we deliver real, in-depth testing with actionable insights. With our one-client-at-a-time approach and flexible engagement models, you receive dedicated service that's tailored to your unique challenges. Trust us to protect what matters most.
+               At Cyber_Secure, we believe that quality and clarity set us apart. We don't just run automated scans; we deliver real, in-depth testing with actionable insights. With our one-client-at-a-time approach and flexible engagement models, you receive dedicated service that's tailored to your unique challenges. Trust us to protect what matters most.
              </p>
           </ScrollWrapper>
        </div>

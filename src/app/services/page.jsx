@@ -4,7 +4,7 @@ import ScrollWrapper from '@/components/ScrollWrapper';
 import ServiceCard from '@/components/ServiceCard';
 import ServiceModal from '@/components/ServiceModal';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
-import { CloudLightning, Code, FileCheck, Fingerprint, Server, Shield, Wifi } from 'lucide-react';
+import { CloudLightning, Code, FileCheck, Server, Shield, Wifi } from 'lucide-react';
 import { useState } from 'react';
 
 export default function ServicesPage() {
@@ -112,7 +112,7 @@ export default function ServicesPage() {
                     <span className="px-4 py-2 rounded-full bg-white/10 text-white text-sm font-bold border border-white/20">Research Analyst</span>
                  </div>
               </div>
-              <a href="mailto:careers@scriptjacker.in" className="shrink-0 px-8 py-4 bg-neon-teal text-white font-bold rounded-full hover:bg-white hover:text-black hover:scale-105 transition-all">
+              <a href="mailto:careers@Cyber_Secure.in" className="shrink-0 px-8 py-4 bg-neon-teal text-white font-bold rounded-full hover:bg-white hover:text-black hover:scale-105 transition-all">
                  Apply Now
               </a>
            </div>
