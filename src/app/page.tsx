@@ -253,7 +253,7 @@ export default function Home() {
                href="/contact"
                className="inline-block px-12 py-5 rounded-full bg-neon-teal text-white font-bold text-lg hover:scale-105 hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_40px_-10px_var(--color-neon-teal)] uppercase tracking-wide"
             >
-               Order Now
+               Book Now
             </Link>
          </div>
       </section>
