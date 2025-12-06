@@ -1,52 +1,40 @@
 'use client';
 
-import { motion, useAnimation, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
-export default function TypewriterText({ text, className = "", delay = 0, speed = 0.05, onComplete, available = true, showCursor = true }) {
-  // Split text into characters
-  const characters = Array.from(text);
-  const controls = useAnimation();
+export default function TypewriterText({ text, className = "", delay = 0, speed = 30 }) {
+  const [displayedText, setDisplayedText] = useState('');
+  const [started, setStarted] = useState(false);
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.5 });
-  const [isFinished, setIsFinished] = useState(false);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
+  // Handle Initial Delay
   useEffect(() => {
-    if (isInView && available) {
-      const startAnimation = async () => {
-        // Initial delay
-        if (delay > 0) await new Promise(resolve => setTimeout(resolve, delay * 1000));
-
-        // Animate characters
-        await controls.start(i => ({
-          opacity: 1,
-          display: "inline",
-          transition: { delay: i * speed, duration: 0 }
-        }));
-
-        setIsFinished(true);
-        if (onComplete) onComplete();
-      };
-
-      startAnimation();
+    if (isInView && !started) {
+      const timer = setTimeout(() => {
+        setStarted(true);
+      }, delay * 1000); // delay is in seconds
+      return () => clearTimeout(timer);
     }
-  }, [isInView, controls, delay, speed, onComplete, available]);
+  }, [isInView, delay, started]);
+
+  // Handle Typing Effect
+  useEffect(() => {
+    if (started && displayedText.length < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText(text.slice(0, displayedText.length + 1));
+      }, speed); // speed is in milliseconds (e.g., 30ms)
+      return () => clearTimeout(timeout);
+    }
+  }, [started, displayedText, text, speed]);
 
   return (
     <span ref={ref} className={className}>
-      {characters.map((char, index) => (
+      {displayedText}
+      {/* Cursor Animation */}
+      {displayedText.length < text.length && (
         <motion.span
-          key={`${char}-${index}`}
-          custom={index}
-          initial={{ opacity: 0, display: "none" }}
-          animate={controls}
-        >
-          {char}
-        </motion.span>
-      ))}
-      {showCursor && !isFinished && (
-        <motion.span
-          initial={{ opacity: 0 }}
           animate={{ opacity: [0, 1, 0] }}
           transition={{ duration: 0.8, repeat: Infinity }}
           className="inline-block w-[2px] h-[1em] bg-neon-teal ml-1 align-middle"

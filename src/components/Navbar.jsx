@@ -132,7 +132,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setIsOpen(false)}
-                className="w-full text-center mt-4 px-6 py-3 rounded-xl bg-gradient-to-r from-neon-teal to-neon-purple font-bold text-white"
+                className="w-full text-center mt-4 px-6 py-3 rounded-full bg-gradient-to-r from-neon-teal to-neon-purple font-bold text-white shadow-lg shadow-neon-teal/20"
               >
                 Get Secure
               </Link>

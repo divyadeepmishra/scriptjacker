@@ -108,7 +108,7 @@ export default function ContactForm() {
           type="submit"
           disabled={status === 'loading' || status === 'success'}
           className={cn(
-            "w-full py-4 rounded-xl font-bold flex items-center justify-center transition-all",
+            "w-full py-4 rounded-full font-bold flex items-center justify-center transition-all",
             status === 'success'
                ? "bg-green-500 text-white"
                : "bg-gradient-to-r from-neon-teal to-neon-purple text-white hover:opacity-90 active:scale-[0.98]"

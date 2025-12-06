@@ -8,6 +8,7 @@ import ScrollWrapper from '@/components/ScrollWrapper';
 import ServiceCard from '@/components/ServiceCard';
 import ServiceModal from '@/components/ServiceModal';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
+import WorldMap from '@/components/WorldMap';
 import { CreditCard, FileCheck, FileJson, FileSignature, Globe, Handshake, Lock, MailWarning, Network, Puzzle, Smartphone, Star, Users, Workflow, ZoomIn } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -224,6 +225,18 @@ export default function Home() {
 
       {/* Crafting Trust Section */}
       <CraftingTrust />
+
+      {/* World Map Section */}
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+         <div className="text-center max-w-4xl mx-auto mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Global <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-teal to-neon-purple">Reach</span></h2>
+            <div className="h-1 w-24 bg-neon-teal mx-auto mb-8 rounded-full" />
+            <p className="text-gray-400 text-lg leading-relaxed">
+               Securing digital assets worldwide. Our experts operate globally to neutralize threats before they reach you.
+            </p>
+         </div>
+         <WorldMap />
+      </section>
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 mb-20">
