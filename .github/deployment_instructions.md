@@ -24,3 +24,4 @@ To enable automated deployment, you need to add your Hostinger FTP credentials t
 3.  **Trigger Deployment:**
     *   Once these secrets are saved, the next time you push code to the `main` branch, the deployment will start automatically.
     *   You can check the progress in the **Actions** tab of your repository.
+    
